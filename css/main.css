@@ -1,0 +1,220 @@
+body{
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+	background-image: url(../css/kepek/forest.gif);
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+
+	
+	
+}
+*, *::before, *::after{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+img{
+	max-width: 100%;
+}
+body{
+	display: grid;
+	grid-template-areas: 
+	"fejlec"
+	"foresz"
+	"lablec"
+	;
+	
+	grid-template-rows: max-content  1fr ;
+	min-height: 100vh;
+}
+header{
+	grid-area: fejlec;
+
+}
+
+main{
+	grid-area: foresz;
+
+}
+footer{
+	grid-area: lablec;
+}
+header .headermenu{
+	margin: 5rem;
+	
+}
+header .headermenu:hover{
+	color: white;
+	background-color: green;
+	border-radius: .5rem;
+
+}
+a{
+ 	text-decoration: none;
+ 	color:black ;
+}
+.fejalja{
+	text-align: center;
+	background-color: rgba(255,255,200, 0.7);
+	font-size: 30px;
+
+}
+header{
+	line-height: 3rem;
+	font-size: .95rem;
+	text-align: left;
+	padding: .75rem ;
+}
+.fejteteje{
+	font-size: 32px;
+	color:rgba(255, 255, 255, 0.6);
+}
+main.centerkep{
+	display: grid;
+	grid-template-columns: minmax(1rem, 1fr) minmax(288px,584px ) minmax(1rem, 1fr);
+	grid-template-rows: minmax(1rem, 1fr) max-content minmax(1rem, 1fr);
+
+}
+.kozepso{
+	grid-row: 2/3;
+	grid-column: 2/3;
+}
+.foto{
+	display: block;
+	margin-left: auto;
+	margin-right: auto; 
+	width: 20vw;
+
+
+}
+.bal{
+	font-size:3vh;
+	margin-left: 3rem;
+
+	color: white;
+	grid-row: 2/3
+
+
+}
+.lent{
+	grid-row: 3/3;
+	margin-top: 3rem;
+	grid-column: 2/3;
+	color: white;
+	font-size: 3vh;
+}
+.jobb{
+	color: white;
+	grid-row: 2/3;
+	grid-column: 3/3;
+	font-size: 3vh;
+	margin-right: 3rem;
+}
+.fent{
+	font-size: 5vh;
+	color: white;
+	margin-top: 3rem;
+	grid-column: 2/3;
+	text-decoration: underline;
+
+}
+.lab{
+	line-height: 0.70rem;
+	font-size: 1rem;
+	text-align: left;
+	padding: .75rem ;
+	color:black;
+	background-color: rgba(255,255,200, 0.7);
+
+}
+
+#email{
+	
+	
+	font-size: 3vh;
+	color: black;
+	margin-top: 6rem;
+	background-color: rgba(255,255,200, 0.7);
+	margin: 10rem 17rem;
+	padding: 1.5rem;
+	border:2px solid black;
+	border-radius: 2rem;
+}
+#lyuk{
+
+	margin:0rem 0rem 3rem 0rem;
+}
+
+
+
+.kepkartya .kep{
+	height: 25rem;
+	width: 25rem;
+	background-color: rgba(0,0,0,0);
+	text-align: center;
+	margin-top: 4rem;
+	margin-bottom: 3rem;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+.kepkartya .kep img:hover{
+	
+-ms-transform:scale(1.5);
+-webkit-transform: scale(1.5);
+transform: scale(1.5);
+
+}
+
+.kepkartya .kep img{
+	height: 100%;
+	width: 100%;
+	object-fit: contain;
+	
+	transition: 2s;
+}
+.fotok{
+	width: 30vw;
+	height: 40vh;
+	display: block;
+	margin:3rem 6rem 3rem 6rem;
+}
+.terv{
+	display: grid;
+	
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto;
+}
+
+
+
+#szoveg{
+	color: white;
+	font-size: 5vh;
+	float: left;
+	margin: 2rem 0rem 0rem 6rem;
+	text-decoration: underline;
+}
+.fotok:hover{
+	-webkit-box-shadow: 18px 21px 18px 3px rgba(0,0,0,0.71);
+-moz-box-shadow: 18px 21px 18px 3px rgba(0,0,0,0.71);
+box-shadow: 18px 21px 18px 3px rgba(0,0,0,0.71);
+-ms-transform:scale(1.25);
+-webkit-transform: scale(1.25);
+transform: scale(1.25);
+}
+
+.szoveg2{
+	color: white;
+	margin:6rem;
+	font-size: 3vh;
+}
+#web{
+	color: white;
+	font-size: 4vh;
+
+}
